@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Catherine Zakharova](https://up.htmlacademy.ru/htmlcss/36/user/2194365).
-* Наставник: `Неизвестно`.
+- Студент: [Catherine Zakharova](https://up.htmlacademy.ru/htmlcss/36/user/2194365).
+- Наставник: `Сергей Зубов`.
 
 ---
 
