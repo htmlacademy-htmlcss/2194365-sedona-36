@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Sedona</title>
+    <link rel="stylesheet" href="style.css" />
+    <base href="https://htmlacademy-htmlcss.github.io/2194365-sedona-36/3/">
+</head>
+  <body class="flex justify-center">
+    <div class="page">
+      <header class="page-header flex">
+        <div class="page-header-logo">
+          <img
+            class="top-logo"
+            src="assets/brand-sedona.png"
+            alt="City of Sedona"
+          />
+        </div>
+        <div class="navigation">
+          <ul class="navigation-list flex">
+            <li class="navigation-item">
+              <a class="navigation-link" href="index.html">Главная</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="about.html">О Седоне</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="about.html">Гостиницы</a>
+            </li>
+          </ul>
+        </div>
+        <div class="flex search">
+          <div class="navigation-search">
+            <img class="search" src="assets/search.svg" alt="search" />
+          </div>
+          <div class="navigation-search">
+            <img
+              class="search-reviews"
+              src="assets/reviews.svg"
+              alt="reviews"
+            />
+            <span>12</span>
+            <!--css position absolute(12)-->
+          </div>
+          <div class="button">
+            <button>Хочу сюда!</button>
+          </div>
+        </div>
+      </header>
+      <section class="navigation-hotels flex">
+        <h1>Гостиницы Седоны</h1>
+        <div class="navigation-hotels-icon">
+          <img class="icon-hotel" src="assets/house.svg" alt="Home" />
+          <img
+            class="icon-greater"
+            src="assets/greater.svg"
+            alt="the greater"
+          />
+        </div>
+        <fieldset>
+          <legend>Инфраструктура</legend>
+
+          <div>
+            <input type="checkbox" id="scales" name="scales" checked />
+            <label for="scales">Бассейн</label>
+          </div>
+          <div>
+            <input type="checkbox" id="scales" name="scales" checked />
+            <label for="scales">Парковка</label>
+          </div>
+          <div>
+            <input type="checkbox" id="horns" name="horns" />
+            <label for="horns">Wi-Fi</label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Тип жилья</legend>
+
+          <div>
+            <input type="radio" id="huey" name="drone" value="huey" checked />
+            <label for="huey">Гостиница</label>
+          </div>
+
+          <div>
+            <input type="radio" id="dewey" name="drone" value="dewey" />
+            <label for="dewey">Мотель</label>
+          </div>
+
+          <div>
+            <input type="radio" id="louie" name="drone" value="louie" />
+            <label for="louie">Апартаменты</label>
+          </div>
+        </fieldset>
+        <div class="price">
+          <h4>Стоимость, ₽:</h4>
+          <input
+            class="hotels-main-price"
+            type="number"
+            name="hotels-min-price"
+            value="0"
+          />
+          <input
+            class="hotels-main-price"
+            type="number"
+            name="hotels-min-price"
+            value="900"
+          />
+          <input class="control-input flex" type="range" name="price-range" />
+        </div>
+        <div class="button">
+          <button>Применить</button>
+          <button>Сбросить</button>
+        </div>
+      </section>
+      <section class="catalog-page">
+        <div class="flex">
+          <h2>Найдено гостиниц: 38</h2>
+          <select name="price" id="price-select">
+            <option value="">--Сначала дешевые--</option>
+            <option value="#">Hotels</option>
+          </select>
+          <div class="view">
+            <img class="table" src="assets/table.png" alt="view" />
+            <img class="slideshow" src="assets/slideshadow.png" alt="view" />
+            <img class="list" src="assets/list.png" alt="view" />
+          </div>
+        </div>
+
+        <div class="flex flex-wrap">
+          <div class="catalog-hotels flex flex-col">
+            <img
+              class="catalog-image"
+              src="assets/amara-hotel.jpg"
+              alt="amara"
+            />
+            <h3>Amara Resort & Spa</h3>
+            <p>
+              <span>Гостиница</span>
+              <span>От 4000 ₽</span>
+            </p>
+            <div class="button">
+              <button>подробнее</button>
+              <button>в избранное</button>
+            </div>
+            <div class="raiting">
+              <img class="stars-raiting" src="assets/Stars.png" alt="stars" />
+              <button>Рейтинг: 8,5</button>
+            </div>
+          </div>
+          <div class="catalog-hotels flex flex-col">
+            
+            <img class="catalog-image" src="assets/poco-hotel.jpg" alt="poco" />
+            <h3>Villas at Poco Diablo</h3>
+            <p>
+              <span>Гостиница</span>
+              <span>От 5000 ₽</span>
+            </p>
+            <div class="button">
+              <button>подробнее</button>
+              <button>в избранное</button>
+            </div>
+            <div class="raiting">
+              <img class="stars-raiting" src="assets/Stars.png" alt="stars" />
+              <button>Рейтинг: 9,2</button>
+            </div>
+          </div>
+          <div class="catalog-hotels flex flex-col">
+            <img
+              class="catalog-image"
+              src="assets/desert-hotel.jpg"
+              alt="desert"
+            />
+            <h3>Desert Quail Inn</h3>
+            <p>
+              <span>Гостиница</span>
+              <span>От 2500 ₽</span>
+            </p>
+            <div class="button">
+              <button>подробнее</button>
+              <button>в избранное</button>
+            </div>
+            <div class="raiting">
+              <img class="stars-raiting" src="assets/Stars.png" alt="stars" />
+              <button>Рейтинг: 6,9</button>
+            </div>
+          </div>
+          <div class="catalog-hotels flex flex-col">
+            <img
+              class="catalog-image"
+              src="assets/green-hotel.jpg"
+              alt="green-hotel"
+            />
+            <h3>GreenTree Innn</h3>
+            <p>
+              <span>Гостиница</span>
+              <span>От 1500 ₽</span>
+            </p>
+            <div class="button">
+              <button>подробнее</button>
+              <button>в избранное</button>
+            </div>
+            <div class="raiting">
+              <img class="stars-raiting" src="assets/Stars.png" alt="stars" />
+              <button>Рейтинг: 5,0</button>
+            </div>
+          </div>
+        </div>
+        <div class="flex">
+          <img  src="assets/Пагинация.png" alt="pagination">
+        </div>
+      </section>
+      <section class="maining-list">
+        <div class="maining-list-title">
+          <h2>Подпишитесь на рассылку</h2>
+          <p>
+            Только полезная информация и никакого спама, честное бойскаутское!
+          </p>
+        </div>
+        <form
+          class="newsletter-form"
+          action="https://echo.htmlacademy.ru/"
+          method="post"
+        >
+          <label for="newsletter-email">Email</label>
+          <input
+            class="field"
+            placeholder="Ваш e-mail"
+            type="email"
+            name="newsletter-email"
+            id="newsletter-email"
+            required
+          />
+          <button class="button newsletter-button" type="submit">
+            <span class="visually-hidden">Подписаться</span>
+          </button>
+        </form>
+      </section>
+      <footer class="page-footer flex">
+        <div class="footer-icons">
+          <div class="social-links">
+            <a class="social-icons" href="#">Вконтакте</a>
+            <a class="social-icons" href="#">Телеграм</a>
+            <a class="social-icons" href="#">Ютуб</a>
+          </div>
+        </div>
+        <address class="contacts-address flex">
+          <a class="contacts-phone" href="tel:+78128121212"
+            >+7 (812)-812-12-12></a
+          >
+        </address>
+        <img
+          class="footer-icon"
+          src="assets/brand-academy.png"
+          alt="logo html academy"
+        />
+      </footer>
+      <script src="#"></script>
+    </div>
+  </body>
+</html>
+<!--<p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></p> -->
+<!--папки на компьютере -->
+<!--flex flow -->
