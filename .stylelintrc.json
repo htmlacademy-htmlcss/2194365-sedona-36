@@ -2,7 +2,7 @@
   "rules": {
     "block-no-empty": true,
     "comment-no-empty": true,
-    "declaration-block-no-duplicate-custom-properties": true,
+    "declaration-block-no-duplicate-custom-properties": false,
     "declaration-block-no-shorthand-property-overrides": true,
     "font-family-no-duplicate-names": true,
     "function-calc-no-unspaced-operator": true,
@@ -89,12 +89,8 @@
     "rule-empty-line-before": [
       "always",
       {
-        "except": [
-          "first-nested"
-        ],
-        "ignore": [
-          "after-comment"
-        ]
+        "except": ["first-nested"],
+        "ignore": ["after-comment"]
       }
     ],
     "media-feature-colon-space-after": "always",
@@ -111,13 +107,8 @@
     "at-rule-empty-line-before": [
       "always",
       {
-        "except": [
-          "first-nested",
-          "blockless-after-blockless"
-        ],
-        "ignore": [
-          "after-comment"
-        ]
+        "except": ["first-nested", "blockless-after-blockless"],
+        "ignore": ["after-comment"]
       }
     ],
     "at-rule-name-case": "lower",
@@ -141,9 +132,7 @@
     "max-nesting-depth": [
       2,
       {
-        "ignoreAtRules": [
-          "media"
-        ]
+        "ignoreAtRules": ["media"]
       }
     ],
     "max-empty-lines": 2,

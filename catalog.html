@@ -4,49 +4,50 @@
     <title>Sedona</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="flex justify-center">
-    <div class="page">
-      <header class="page-header flex">
-        <div class="page-header-logo">
+  <body>
+    <div class="wrapper">
+      <header class="main-header">
+        <a class="main-logo">
           <img
-            class="top-logo"
-            src="assets/brand-sedona.png"
-            alt="City of Sedona"
+            src="assets/sedona-logo.svg"
+            alt="Логотип Седона"
+            width="140"
+            height="70"
           />
-        </div>
-        <div class="navigation">
-          <ul class="navigation-list flex">
-            <li class="navigation-item">
-              <a class="navigation-link" href="index.html">Главная</a>
+        </a>
+        <nav class="navigation">
+          <ul class="nav-list flex">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Главная</a>
             </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="about.html">О Седоне</a>
+            <li class="nav-item">
+              <a class="nav-link" href="#">О Седоне</a>
             </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="about.html">Гостиницы</a>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Гостиницы</a>
             </li>
           </ul>
-        </div>
-        <div class="flex search">
-          <div class="navigation-search">
-            <img class="search" src="assets/search.svg" alt="search" />
-          </div>
-          <div class="navigation-search">
-            <img
-              class="search-reviews"
-              src="assets/reviews.svg"
-              alt="reviews"
-            />
-            <span>12</span>
-            <!--css position absolute(12)-->
-          </div>
-          <div class="button">
-            <button>Хочу сюда!</button>
-          </div>
-        </div>
+
+          <ul class="navigation-user flex">
+            <li class="nav-user-item">
+              <a class="nav-user-link" href="#">
+                <span class="visually-hidden search">Поиск </span>
+              </a>
+            </li>
+            <li class="nav-user-item">
+              <a class="nav-user-link" href="#">
+                <span class="visually-hidden favorites">Избранное</span>
+                <span class="visually-hidden favorites-number"> 12 </span>
+              </a>
+            </li>
+            <li>
+              <a class="nav-user-link button brown" href="#">Хочу сюда</a>
+            </li>
+          </ul>
+        </nav>
       </header>
-      <section class="navigation-hotels flex">
-        <h1>Гостиницы Седоны</h1>
+      <section class="filter-block">
+        <h1 class="visually-hidden">Гостиницы Седоны</h1>
         <div class="navigation-hotels-icon">
           <img class="icon-hotel" src="assets/house.svg" alt="Home" />
           <img
@@ -146,7 +147,6 @@
             </div>
           </div>
           <div class="catalog-hotels flex flex-col">
-            
             <img class="catalog-image" src="assets/poco-hotel.jpg" alt="poco" />
             <h3>Villas at Poco Diablo</h3>
             <p>
@@ -204,7 +204,7 @@
           </div>
         </div>
         <div class="flex">
-          <img  src="assets/Пагинация.png" alt="pagination">
+          <img src="assets/Пагинация.png" alt="pagination" />
         </div>
       </section>
       <section class="maining-list">
@@ -219,7 +219,7 @@
           action="https://echo.htmlacademy.ru/"
           method="post"
         >
-          <label for="newsletter-email">Email</label>
+          <label for="visually-hidden">Email</label>
           <input
             class="field"
             placeholder="Ваш e-mail"
@@ -229,33 +229,42 @@
             required
           />
           <button class="button newsletter-button" type="submit">
-            <span class="visually-hidden">Подписаться</span>
+            <span>Подписаться</span>
           </button>
         </form>
       </section>
       <footer class="page-footer flex">
-        <div class="footer-icons">
-          <div class="social-links">
-            <a class="social-icons" href="#">Вконтакте</a>
-            <a class="social-icons" href="#">Телеграм</a>
-            <a class="social-icons" href="#">Ютуб</a>
-          </div>
+        <div class="footer-social">
+          <ul class="footer-social-list">
+            <li>
+              <a class="footer-social-vk" href="#">
+                <span class="visually-hidden">Vkontakte</span>
+              </a>
+            </li>
+            <li>
+              <a class="footer-social-tl" href="#">
+                <span class="viasually-hidden">Telegram</span>
+              </a>
+            </li>
+            <li>
+              <a class="footer-social-ytb" href="#">
+                <span class="visually-hidden">Youtube</span>
+              </a>
+            </li>
+          </ul>
         </div>
-        <address class="contacts-address flex">
-          <a class="contacts-phone" href="tel:+78128121212"
-            >+7 (812)-812-12-12></a
-          >
+        <address class="contact-address flex">
+          <a class="contact-phone" href="tel:+78128121212">
+            +7 (812)-812-12-12
+          </a>
         </address>
-        <img
-          class="footer-icon"
-          src="assets/brand-academy.png"
-          alt="logo html academy"
-        />
+        <div class="htmlacademy-block">
+          <a href="#" class="footer-htmlacademy-link">
+            <img src="assets/logo-htmlacademy.svg" alt="Логотип академии" />
+          </a>
+        </div>
       </footer>
-      <script src="#"></script>
     </div>
   </body>
 </html>
-<!--<p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></p> -->
-<!--папки на компьютере -->
-<!--flex flow -->
+<!--вставить картинки еда, сувениры, отель в svg-->
