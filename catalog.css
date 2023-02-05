@@ -187,3 +187,8 @@ ul {
   height: 485px;
   width: 1200px;
 }
+.item-rating-list li {
+  background-image: url(assets/rating-icon.svg);
+  width: 18px;
+  height: 17px;
+}

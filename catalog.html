@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <title>Sedona</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="catalog.css" />
   </head>
   <body>
     <div class="wrapper">
@@ -68,26 +68,31 @@
             <label for="scales">Парковка</label>
           </div>
           <div>
-            <input type="checkbox" id="horns" name="horns" />
-            <label for="horns">Wi-Fi</label>
+            <input type="checkbox" id="wi-fi" name="wi-fi" />
+            <label for="wi-fi">Wi-Fi</label>
           </div>
         </fieldset>
         <fieldset>
           <legend>Тип жилья</legend>
 
           <div>
-            <input type="radio" id="huey" name="drone" value="huey" checked />
-            <label for="huey">Гостиница</label>
+            <input type="radio" id="hotel" name="type" value="hotel" checked />
+            <label for="hotel">Гостиница</label>
           </div>
 
           <div>
-            <input type="radio" id="dewey" name="drone" value="dewey" />
-            <label for="dewey">Мотель</label>
+            <input type="radio" id="motel" name="type" value="motel" />
+            <label for="motel">Мотель</label>
           </div>
 
           <div>
-            <input type="radio" id="louie" name="drone" value="louie" />
-            <label for="louie">Апартаменты</label>
+            <input
+              type="radio"
+              id="appartments"
+              name="type"
+              value="appartments"
+            />
+            <label for="appartments">Апартаменты</label>
           </div>
         </fieldset>
         <div class="price">
@@ -115,50 +120,74 @@
         <div class="flex">
           <h2>Найдено гостиниц: 38</h2>
           <select name="price" id="price-select">
-            <option value="">--Сначала дешевые--</option>
-            <option value="#">Hotels</option>
+            <option value="">Сначала популярное</option>
+            <option value="#">Сначала дешёвое</option>
+            <option value="#">Сначала дорогое</option>
           </select>
           <div class="view">
-            <img class="table" src="assets/table.png" alt="view" />
-            <img class="slideshow" src="assets/slideshadow.png" alt="view" />
-            <img class="list" src="assets/list.png" alt="view" />
+            <img
+              class="table"
+              src="assets/table.svg"
+              alt="view"
+              width="16"
+              height="14"
+            />
+            <img
+              class="slideshow"
+              src="assets/slideshow.svg"
+              alt="view"
+              width="16"
+              height="14"
+            />
+            <img
+              class="list"
+              src="assets/list.svg"
+              alt="view"
+              width="16"
+              height="14"
+            />
           </div>
         </div>
-
-        <div class="flex flex-wrap">
+        <section class="catalog-hotel flex flex-wrap">
           <div class="catalog-hotels flex flex-col">
             <img
               class="catalog-image"
               src="assets/amara-hotel.jpg"
               alt="amara"
+              width="300"
+              height="212"
             />
             <h3>Amara Resort & Spa</h3>
             <p>
               <span>Гостиница</span>
               <span>От 4000 ₽</span>
             </p>
-            <div class="button">
-              <button>подробнее</button>
-              <button>в избранное</button>
+            <div class="item-button">
+              <a href="#" class="item-button-detail">Подробнее</a>
+              <a href="#" class="item-button-reserve">В избранное</a>
             </div>
             <div class="raiting">
-              <img class="stars-raiting" src="assets/Stars.png" alt="stars" />
               <button>Рейтинг: 8,5</button>
             </div>
           </div>
           <div class="catalog-hotels flex flex-col">
-            <img class="catalog-image" src="assets/poco-hotel.jpg" alt="poco" />
+            <img
+              class="catalog-image"
+              src="assets/poco-hotel.jpg"
+              alt="poco"
+              width="300"
+              height="212"
+            />
             <h3>Villas at Poco Diablo</h3>
             <p>
               <span>Гостиница</span>
               <span>От 5000 ₽</span>
             </p>
-            <div class="button">
-              <button>подробнее</button>
-              <button>в избранное</button>
+            <div class="item-button">
+              <a href="#" class="item-button-detail">Подробнее</a>
+              <a href="#" class="item-button-reserve">В избранное</a>
             </div>
             <div class="raiting">
-              <img class="stars-raiting" src="assets/Stars.png" alt="stars" />
               <button>Рейтинг: 9,2</button>
             </div>
           </div>
@@ -167,18 +196,19 @@
               class="catalog-image"
               src="assets/desert-hotel.jpg"
               alt="desert"
+              width="300"
+              height="212"
             />
             <h3>Desert Quail Inn</h3>
             <p>
               <span>Гостиница</span>
               <span>От 2500 ₽</span>
             </p>
-            <div class="button">
-              <button>подробнее</button>
-              <button>в избранное</button>
+            <div class="item-button">
+              <a href="#" class="item-button-detail">Подробнее</a>
+              <a href="#" class="item-button-reserve">В избранное</a>
             </div>
             <div class="raiting">
-              <img class="stars-raiting" src="assets/Stars.png" alt="stars" />
               <button>Рейтинг: 6,9</button>
             </div>
           </div>
@@ -187,25 +217,37 @@
               class="catalog-image"
               src="assets/green-hotel.jpg"
               alt="green-hotel"
+              width="300"
+              height="212"
             />
             <h3>GreenTree Innn</h3>
             <p>
               <span>Гостиница</span>
               <span>От 1500 ₽</span>
             </p>
-            <div class="button">
-              <button>подробнее</button>
-              <button>в избранное</button>
+            <div class="item-button">
+              <a href="#" class="item-button-detail">Подробнее</a>
+              <a href="#" class="item-button-reserve">В избранное</a>
             </div>
-            <div class="raiting">
-              <img class="stars-raiting" src="assets/Stars.png" alt="stars" />
-              <button>Рейтинг: 5,0</button>
+            <div class="item-rating">
+              <ul class="item-rating-list">
+                <li>
+                  <span class="visually-hidden">1 звезда</span>
+                </li>
+                <li>
+                  <span class="visually-hidden">2 звезды</span>
+                </li>
+                <li>
+                  <span class="visually-hidden">3 звезды</span>
+                </li>
+                <li>
+                  <span class="visually-hidden">4 звезды</span>
+                </li>
+              </ul>
             </div>
+            <button>Рейтинг: 5,0</button>
           </div>
-        </div>
-        <div class="flex">
-          <img src="assets/Пагинация.png" alt="pagination" />
-        </div>
+        </section>
       </section>
       <section class="maining-list">
         <div class="maining-list-title">
@@ -219,7 +261,7 @@
           action="https://echo.htmlacademy.ru/"
           method="post"
         >
-          <label for="visually-hidden">Email</label>
+          <label for="newsletter-email">Email</label>
           <input
             class="field"
             placeholder="Ваш e-mail"
@@ -229,7 +271,7 @@
             required
           />
           <button class="button newsletter-button" type="submit">
-            <span>Подписаться</span>
+            <span class="visually-hidden">Подписаться</span>
           </button>
         </form>
       </section>
@@ -267,4 +309,3 @@
     </div>
   </body>
 </html>
-<!--вставить картинки еда, сувениры, отель в svg-->
